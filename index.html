@@ -3,51 +3,68 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>New Year Dedication</title>
+  <title>Happy New Year, My Love</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="hero-section">
     <div class="countdown">
-      <h1 class="animate-fade-in">New Year 2025 Countdown</h1>
+      <h1 class="animate-fade-in">Happy New Year, My Love</h1>
       <div id="timer" class="animate-slide-up">
         <span id="days">00</span> Days
         <span id="hours">00</span> Hours
         <span id="minutes">00</span> Minutes
         <span id="seconds">00</span> Seconds
       </div>
-      <div class="floating-cats">
-        <img src="cat1.png" alt="Cat" class="cat cat1">
-        <img src="cat2.png" alt="Cat" class="cat cat2">
-        <img src="cat3.png" alt="Cat" class="cat cat3">
+    </div>
+  </div>
+
+  <div class="interactive-cats">
+    <h2>Meet Our Furry Friends</h2>
+    <div class="cats">
+      <img src="cat1.png" alt="Cat 1" class="cat" onclick="playSound('meow1')">
+      <img src="cat2.png" alt="Cat 2" class="cat" onclick="playSound('meow2')">
+      <img src="cat3.png" alt="Cat 3" class="cat" onclick="playSound('meow3')">
+    </div>
+    <audio id="meow1" src="meow1.mp3"></audio>
+    <audio id="meow2" src="meow2.mp3"></audio>
+    <audio id="meow3" src="meow3.mp3"></audio>
+  </div>
+
+  <div class="timeline-section">
+    <h2>Our Journey</h2>
+    <div class="timeline">
+      <div class="event">
+        <h3>2022</h3>
+        <p>The year we met and started our beautiful journey.</p>
+      </div>
+      <div class="event">
+        <h3>2023</h3>
+        <p>Unforgettable moments and countless smiles.</p>
+      </div>
+      <div class="event">
+        <h3>2024</h3>
+        <p>More adventures and a bond that grew stronger.</p>
       </div>
     </div>
   </div>
 
-  <div class="message-section">
-    <h2 class="animate-fade-in">To My Love</h2>
-    <p class="animate-fade-in">You are the light of my life and the reason behind every smile. As we step into the new year, I look forward to more beautiful memories with you.</p>
-  </div>
-
-  <div class="memories-section">
-    <h2 class="animate-fade-in">Our Journey</h2>
-    <div class="memory animate-slide-up">
-      <img src="memory1.jpg" alt="Memory 1">
-      <p>The day we first met.</p>
-    </div>
-    <div class="memory animate-slide-up">
-      <img src="memory2.jpg" alt="Memory 2">
-      <p>Our unforgettable vacation.</p>
+  <div class="gallery-section">
+    <h2>Our Memories</h2>
+    <div class="gallery">
+      <img src="memory1.jpg" alt="Memory 1" class="gallery-item">
+      <img src="memory2.jpg" alt="Memory 2" class="gallery-item">
+      <img src="memory3.jpg" alt="Memory 3" class="gallery-item">
     </div>
   </div>
 
   <div class="final-message">
-    <h2 class="animate-fade-in">A Romantic Conclusion</h2>
-    <p class="animate-slide-up">As the clock strikes midnight, know that you are deeply loved. Cheers to a magical 2025 together!</p>
+    <h2>A New Year of Love</h2>
+    <p>As we welcome 2025, know that my love for you grows every single day. Here's to another year of happiness and togetherness. Love you always!</p>
   </div>
 
   <footer>
-    <p>&copy; 2024 With Love</p>
+    <p>&copy; 2024 With Endless Love</p>
   </footer>
 
   <script src="script.js"></script>
