@@ -1,5 +1,6 @@
+/* General Styles */
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
   background: linear-gradient(to bottom, #ff9a9e, #fad0c4);
@@ -7,18 +8,16 @@ body {
   overflow-x: hidden;
 }
 
+h1, h2, h3 {
+  text-align: center;
+  margin: 20px 0;
+}
+
 .hero-section {
   text-align: center;
   padding: 100px 20px;
   background: url('hero-background.jpg') no-repeat center center/cover;
   color: white;
-  position: relative;
-  overflow: hidden;
-}
-
-.hero-section h1 {
-  font-size: 3em;
-  margin-bottom: 20px;
 }
 
 #timer {
@@ -28,33 +27,71 @@ body {
   gap: 15px;
 }
 
-.message-section, .memories-section, .final-message {
+.interactive-cats {
+  background: #ffe5e9;
   padding: 50px 20px;
-  text-align: center;
 }
 
-.message-section {
+.cats {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.cat {
+  width: 150px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.cat:hover {
+  transform: scale(1.2);
+}
+
+.timeline-section {
+  background: #fdfdfd;
+  padding: 50px 20px;
+}
+
+.timeline {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.event {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-section {
+  padding: 50px 20px;
   background: #fff5f8;
 }
 
-.memories-section {
-  background: #fdfdfd;
+.gallery {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
 }
 
-.memories-section .memory {
-  display: inline-block;
-  margin: 20px;
-  text-align: center;
-}
-
-.memories-section img {
+.gallery-item {
   width: 200px;
   height: auto;
   border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+  transform: scale(1.1);
 }
 
 .final-message {
   background: #ffe5e9;
+  text-align: center;
+  padding: 50px 20px;
 }
 
 footer {
@@ -91,43 +128,4 @@ footer {
 
 .animate-slide-up {
   animation: slideUp 2s ease-out;
-}
-
-/* Floating Cats */
-.floating-cats {
-  position: absolute;
-  top: 20px;
-  left: 0;
-  width: 100%;
-  pointer-events: none;
-}
-
-.cat {
-  position: absolute;
-  width: 100px;
-  animation: float 5s ease-in-out infinite;
-}
-
-.cat1 {
-  left: 10%;
-  animation-delay: 0s;
-}
-
-.cat2 {
-  left: 50%;
-  animation-delay: 1s;
-}
-
-.cat3 {
-  left: 80%;
-  animation-delay: 2s;
-}
-
-@keyframes float {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-20px);
-  }
 }
