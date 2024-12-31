@@ -1,0 +1,63 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #ff9a9e, #fad0c4);
+  color: #333;
+  overflow-x: hidden;
+}
+
+.hero-section {
+  text-align: center;
+  padding: 100px 20px;
+  background: url('hero-background.jpg') no-repeat center center/cover;
+  color: white;
+}
+
+.hero-section h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+#timer {
+  font-size: 1.5em;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.message-section, .memories-section, .final-message {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.message-section {
+  background: #fff5f8;
+}
+
+.memories-section {
+  background: #fdfdfd;
+}
+
+.memories-section .memory {
+  display: inline-block;
+  margin: 20px;
+  text-align: center;
+}
+
+.memories-section img {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.final-message {
+  background: #ffe5e9;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #222;
+  color: #fff;
+}
